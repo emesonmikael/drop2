@@ -42,7 +42,7 @@ bot.onText(/\/start/, (msg) => {
             tokens[userId] = token;
 
             // Enviar link de retorno para a aplicação
-            bot.sendMessage(chatId, `Clique no link para retornar à aplicação: http://127.0.0.1:5500?telegram_user_id=${userId}&token=${token}`);
+            bot.sendMessage(chatId, `Clique no link para retornar à aplicação: https://drop2-theta.vercel.app/?telegram_user_id=${userId}&token=${token}`);
         } else {
             bot.sendMessage(chatId, "Você não é membro do grupo.");
         }

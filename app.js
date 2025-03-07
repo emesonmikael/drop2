@@ -128,7 +128,7 @@ const token = urlParams.get("token");
 if (telegramUserId && token) {
     loadingSpinner.classList.remove("hidden");
     telegramStatus.textContent = "Verificando token...";
-    fetch(`https://sua-aplicacao.com/verify-token?userId=${telegramUserId}&token=${token}`)
+    fetch(`https://drop2-theta.vercel.app/verify-token?userId=${telegramUserId}&token=${token}`)
         .then(response => response.json())
         .then(data => {
             loadingSpinner.classList.add("hidden");
