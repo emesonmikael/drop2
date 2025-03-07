@@ -49,6 +49,6 @@ bot.onText(/\/start/, (msg) => {
     });
 });
 
-app.listen(3000, () => {
+app.listen(3010, () => {
     console.log('Servidor rodando na porta 3000');
 });
